@@ -4,7 +4,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 // Theme configuration
 const THEMES = {
   ntgcentral: {
-    name: "NT Government Central",
+    name: "NTG Central",
     cssFile: "/themes/ntgcentral-theme.css",
     description: "Primary NT Government branding",
   },

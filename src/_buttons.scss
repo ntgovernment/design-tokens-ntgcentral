@@ -1,10 +1,10 @@
 // Button component customization using Bootstrap CSS custom properties
-// This approach maintains Bootstrap compatibility while applying NT.GOV.AU design tokens
+// This approach maintains Bootstrap compatibility while applying NTG Central design tokens
 
 @use "../variables" as *;
 
 .btn {
-  // Override Bootstrap's button CSS custom properties with NT.GOV.AU values
+  // Override Bootstrap's button CSS custom properties with NTG Central values
   --bs-btn-padding-x: #{$spacing-16};
   --bs-btn-padding-y: #{$spacing-8};
   --bs-btn-font-family: var(--bs-font-sans-serif);

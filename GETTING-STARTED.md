@@ -1,8 +1,8 @@
-# 🎯 INSTRUCTIONS: Creating Your First NT Government Central Bootstrap Theme
+# 🎯 INSTRUCTIONS: Creating Your First NTG Central Bootstrap Theme
 
 ## ✅ What We've Created
 
-Your project now has the complete structure for creating a Bootstrap theme from NT Government Central design tokens:
+Your project now has the complete structure for creating a Bootstrap theme from NTG Central design tokens:
 
 ```
 design-tokens-ntgcentral/
@@ -66,7 +66,7 @@ Open `examples/preview.html` in your browser to see your theme in action.
 Your button customization is in `src/_buttons.scss`. The approach used:
 
 - ✅ Uses Bootstrap CSS custom properties (`--bs-btn-*`)
-- ✅ Maps to your NT.GOV.AU design tokens
+- ✅ Maps to your NTG Central design tokens
 - ✅ Maintains full Bootstrap compatibility
 - ✅ Supports all Bootstrap button variants and sizes
 
@@ -101,7 +101,7 @@ npm install design-tokens-ntgcentral
 import 'design-tokens-ntgcentral/dist/ntgcentral-theme.css';
 
 // 3. Use standard Bootstrap classes
-<button className="btn btn-primary">NT.GOV.AU Button</button>
+<button className="btn btn-primary">NTG Central Button</button>
 ```
 
 ### For Multiple Themes
@@ -139,7 +139,7 @@ Your theme is ready when:
 
 - [ ] `npm run build` completes without errors
 - [ ] `dist/ntgcentral-theme.css` contains actual CSS (not just sourcemap)
-- [ ] `examples/preview.html` displays NT.GOV.AU styled components
+- [ ] `examples/preview.html` displays NTG Central styled components
 - [ ] Buttons show correct colors, fonts, and spacing
 - [ ] All Bootstrap classes work as expected
 
