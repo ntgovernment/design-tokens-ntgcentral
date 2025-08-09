@@ -1,0 +1,39 @@
+{
+  "name": "design-tokens-ntgcentral",
+  "version": "1.0.0",
+  "description": "NTG Central Bootstrap theme based on design tokens",
+  "keywords": [
+    "design-tokens",
+    "bootstrap",
+    "theme",
+    "ntgcentral",
+    "css"
+  ],
+  "main": "dist/ntgcentral-theme.css",
+  "files": [
+    "dist/",
+    "_variables.scss",
+    "_root.scss",
+    "src/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "sass src/index.scss dist/ntgcentral-theme.css --style=compressed",
+    "build:dev": "sass src/index.scss dist/ntgcentral-theme.css --style=expanded",
+    "watch": "sass src/index.scss dist/ntgcentral-theme.css --watch --style=expanded",
+    "build:all": "npm run build:dev && npm run build",
+    "preview": "npm run build:dev && echo Open examples/preview.html in your browser"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "peerDependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntgovernment/design-tokens-ntgcentral.git"
+  },
+  "license": "MIT",
+  "author": "Northern Territory Government"
+}

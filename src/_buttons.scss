@@ -1,0 +1,147 @@
+// Button component customization using Bootstrap CSS custom properties
+// This approach maintains Bootstrap compatibility while applying NT.GOV.AU design tokens
+
+@use "../variables" as *;
+
+.btn {
+  // Override Bootstrap's button CSS custom properties with NT.GOV.AU values
+  --bs-btn-padding-x: #{$spacing-16};
+  --bs-btn-padding-y: #{$spacing-8};
+  --bs-btn-font-family: var(--bs-font-sans-serif);
+  --bs-btn-font-size: var(--bs-body-font-size);
+  --bs-btn-font-weight: 600;
+  --bs-btn-line-height: #{calc(
+      $typography-sizing-line-height-body-md /
+        $typography-sizing-font-size-body-md
+    )};
+  --bs-btn-color: #{$ntg-central-brand-typography-text-colours-text-body-default};
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: #{$ntg-central-brand-branded-elements-border-width-sm};
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: #{$ntg-central-brand-branded-elements-corner-radius-lg};
+  --bs-btn-box-shadow: none;
+  --bs-btn-disabled-bg: #{$ntg-central-brand-colour-neutrals-lightblue-200-neutral};
+  --bs-btn-disabled-border-color: #{$ntg-central-brand-colour-neutrals-lightblue-600};
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem #{$ntg-central-brand-branded-elements-border-accent-colours-focus};
+
+  // Apply the custom properties
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  margin-bottom: 0;
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--bs-btn-bg);
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: var(--bs-btn-color);
+    background-color: var(--bs-btn-bg);
+    border-color: var(--bs-btn-border-color);
+    outline: 0;
+    box-shadow: var(--bs-btn-focus-box-shadow);
+  }
+
+  &:active,
+  &.active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: var(--bs-btn-active-border-color);
+  }
+
+  &:disabled,
+  &.disabled {
+    color: var(--bs-btn-disabled-color);
+    pointer-events: none;
+    background-color: var(--bs-btn-disabled-bg);
+    border-color: var(--bs-btn-disabled-border-color);
+    opacity: var(--bs-btn-disabled-opacity);
+  }
+}
+
+// Size variants
+.btn-sm {
+  --bs-btn-padding-y: #{$spacing-4};
+  --bs-btn-padding-x: #{$spacing-12};
+  --bs-btn-font-size: #{$typography-sizing-font-size-body-sm};
+  --bs-btn-border-radius: var(--bs-border-radius-pill);
+}
+
+.btn-lg {
+  --bs-btn-padding-y: #{$spacing-12};
+  --bs-btn-padding-x: #{$spacing-24};
+  --bs-btn-font-size: #{$typography-sizing-font-size-body-lg};
+  --bs-btn-border-radius: var(--bs-border-radius-pill);
+}
+
+// Primary button variant
+.btn-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: #{$ntg-central-brand-branded-elements-surface-colours-action-primary};
+  --bs-btn-border-color: #{$ntg-central-brand-branded-elements-surface-colours-action-primary};
+  --bs-btn-hover-color: #{$ntg-central-brand-typography-text-colours-text-inverted};
+  --bs-btn-hover-bg: #{$ntg-central-brand-colour-primary-blue-400-mid};
+  --bs-btn-hover-border-color: #{$ntg-central-brand-colour-primary-blue-400-mid};
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: #{$ntg-central-brand-typography-text-colours-text-inverted};
+  --bs-btn-active-bg: #{$ntg-central-brand-colour-primary-blue-200};
+  --bs-btn-active-border-color: #{$ntg-central-brand-colour-primary-blue-200};
+  --bs-btn-disabled-color: #{$color-ntg-central-ignore-neutrals-neutral-900};
+  --bs-btn-disabled-bg: #{$ntg-central-brand-colour-neutrals-lightblue-200-neutral};
+  --bs-btn-disabled-border-color: #{$ntg-central-brand-colour-neutrals-lightblue-600};
+}
+
+// Secondary button variant
+.btn-secondary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-secondary};
+  --bs-btn-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #{$ntg-central-brand-colour-primary-blue-400-mid};
+  --bs-btn-hover-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: var(--bs-white);
+  --bs-btn-active-bg: #{$ntg-central-brand-colour-primary-blue-200};
+  --bs-btn-active-border-color: #{$ntg-central-brand-colour-primary-blue-default};
+  --bs-btn-disabled-color: #{$ntg-central-brand-colour-neutrals-grey-800-neutral};
+  --bs-btn-disabled-bg: #{$ntg-central-brand-colour-neutrals-lightblue-200-neutral};
+  --bs-btn-disabled-border-color: #{$ntg-central-brand-colour-neutrals-lightblue-600};
+}
+
+// Tertiary variant
+.btn-tertiary {
+  --bs-btn-border-radius: #{$ntg-central-brand-branded-elements-corner-radius-lg};
+  --bs-btn-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #{$ntg-central-brand-colour-secondary-green-600-dark};
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: #{$ntg-central-brand-colour-primary-blue-400-mid};
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-disabled-color: #{$ntg-central-brand-colour-neutrals-grey-800-neutral};
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: transparent;
+}
