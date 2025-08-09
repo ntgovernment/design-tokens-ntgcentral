@@ -1,0 +1,18 @@
+@use "../variables" as *;
+
+.btn.back-to-top {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: #{$ntg-central-brand-colour-secondary-green-default};
+  --bs-btn-border-color: #{$ntg-central-brand-colour-secondary-green-default};
+  --bs-btn-hover-color: #{$ntg-central-brand-typography-text-colours-text-inverted};
+  --bs-btn-hover-bg: #{$ntg-central-brand-colour-secondary-green-400-light};
+  --bs-btn-hover-border-color: #{$ntg-central-brand-colour-secondary-green-400-light};
+  --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
+  --bs-btn-active-color: #{$ntg-central-brand-typography-text-colours-text-inverted};
+  --bs-btn-active-bg: #{$ntg-central-brand-colour-secondary-green-400-light};
+  --bs-btn-active-border-color: #{$ntg-central-brand-colour-secondary-green-400-light};
+  --bs-btn-disabled-color: #{$color-ntg-central-ignore-neutrals-neutral-900};
+  --bs-btn-disabled-bg: #{$ntg-central-brand-colour-neutrals-lightblue-200-neutral};
+  --bs-btn-disabled-border-color: #{$ntg-central-brand-colour-neutrals-lightblue-600};
+}
