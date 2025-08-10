@@ -25,16 +25,16 @@ $accordion-icon-transform: rotate(
 .accordion {
   // Override Bootstrap's accordion CSS custom properties with NT.GOV.AU values
   --bs-accordion-color: #{$color-ntg-ignore-neutrals-grey-text};
-  --bs-accordion-bg: #{\$ntg-central-brand-colours-neutrals-grey-white};
+  --bs-accordion-bg: #{$ntg-central-brand-colour-neutrals-grey-white};
   --bs-accordion-transition: #{$accordion-transition};
   --bs-accordion-border-width: #{$ntg-central-brand-branded-elements-border-width-sm};
-  --bs-accordion-border-radius: #{\$ntg-central-brand-basic-branded-elements-corner-radius-none};
-  --bs-accordion-inner-border-radius: #{\$ntg-central-brand-basic-branded-elements-corner-radius-none};
+  --bs-accordion-border-radius: #{$ntg-central-brand-branded-elements-corner-radius-none};
+  --bs-accordion-inner-border-radius: #{$ntg-central-brand-branded-elements-corner-radius-none};
   --bs-accordion-btn-padding-x: #{$spacing-24};
   --bs-accordion-btn-padding-y: #{$spacing-24};
   --bs-accordion-btn-color: var(--primary);
-  --bs-accordion-btn-bg: #{\$ntg-central-brand-colours-neutrals-grey-white};
-  --bs-accordion-btn-font-family: #{\$ntg-central-brand-typography-font-family-primary};
+  --bs-accordion-btn-bg: #{$ntg-central-brand-colour-neutrals-grey-white};
+  --bs-accordion-btn-font-family: #{$ntg-central-brand-typography-font-family-primary};
   --bs-accordion-btn-font-size: #{$typography-sizing-font-size-heading-h5};
   --bs-accordion-btn-font-weight: 700;
   --bs-accordion-btn-line-height: #{$typography-sizing-line-height-heading-h5};
@@ -71,7 +71,7 @@ $accordion-icon-transform: rotate(
   }
 
   &:hover {
-    color: #{\$ntg-central-brand-colours-secondary-ochre-default};
+    color: #{$ntg-central-brand-colour-secondary-green-default};
     background-color: #{$ntg-central-brand-colour-neutrals-lightblue-100};
 
     &::after {
@@ -116,10 +116,10 @@ $accordion-icon-transform: rotate(
 
 // Accordion body customizations
 .accordion-body {
-  //   font-family: #{\$ntg-central-brand-typography-font-family-primary};
+  //   font-family: #{$ntg-central-brand-typography-font-family-primary};
   font-size: #{$typography-sizing-font-size-body-md};
   line-height: #{$typography-sizing-line-height-body-md};
-  color: #{\$ntg-central-brand-typography-text-colours-text-body-default};
+  color: #{$ntg-central-brand-typography-text-colours-text-body-default};
 }
 
 // Accordion item customizations for consistent spacing
