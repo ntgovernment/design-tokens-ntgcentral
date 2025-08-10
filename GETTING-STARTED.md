@@ -10,7 +10,8 @@ design-tokens-ntgcentral/
 ├── 🎨 _root.scss              # CSS custom properties mapping
 ├── 📁 src/
 │   ├── 🎯 index.scss          # Main theme entry point
-│   └── 🔘 _buttons.scss       # Button component customization
+│   ├── 🔘 _buttons.scss       # Button component customization
+│   └── 📋 _accordion.scss     # Accordion component customization
 ├── 📁 examples/              # Preview files and React examples
 ├── 📄 package.json           # Build configuration
 └── 📚 README.md              # Complete documentation
@@ -70,7 +71,53 @@ Your button customization is in `src/_buttons.scss`. The approach used:
 - ✅ Maintains full Bootstrap compatibility
 - ✅ Supports all Bootstrap button variants and sizes
 
-### 5. Add More Components
+### 5. Accordion Component
+
+The accordion component has been fully implemented in `src/_accordion.scss` with:
+
+**Visual Styling:**
+
+- ✅ Primary blue text color for default state
+- ✅ Secondary green colors for expanded state (text and icons)
+- ✅ Neutral background on hover with green icons
+- ✅ NTG Central focus states with proper accessibility
+- ✅ Bold font weight (700) for improved readability
+- ✅ Light blue borders for visual separation
+
+**Interactive Features:**
+
+- ✅ Bootstrap JavaScript bundle integration
+- ✅ Smooth transitions and animations
+- ✅ Keyboard navigation support
+- ✅ Screen reader accessibility
+
+**Usage Example:**
+
+```html
+<!-- Include Bootstrap JS for functionality -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Standard Bootstrap accordion markup -->
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button
+        class="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+      >
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">Content goes here...</div>
+    </div>
+  </div>
+</div>
+```
+
+### 6. Add More Components
 
 Follow the same pattern for other components:
 
@@ -141,6 +188,8 @@ Your theme is ready when:
 - [ ] `dist/ntgcentral-theme.css` contains actual CSS (not just sourcemap)
 - [ ] `examples/preview.html` displays NTG Central styled components
 - [ ] Buttons show correct colors, fonts, and spacing
+- [ ] Accordion components are interactive and properly styled
+- [ ] Accordion hover states and focus states work correctly
 - [ ] All Bootstrap classes work as expected
 
 ## 🚨 Common Issues & Solutions
@@ -178,6 +227,8 @@ You now have:
 4. **Complete React integration examples**
 5. **Scalable component customization system**
 6. **Full Bootstrap compatibility**
+7. **Fully customized accordion component with NTG Central styling**
+8. **Interactive components with Bootstrap JavaScript integration**
 
 ## 🔄 Iteration Process
 

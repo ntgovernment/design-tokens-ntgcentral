@@ -113,12 +113,12 @@
 // Secondary button variant
 .btn-secondary {
   --bs-btn-font-weight: 600;
-  --bs-btn-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
-  --bs-btn-bg: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-secondary};
-  --bs-btn-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-color: #{$ntg-central-brand-branded-elements-surface-colours-action-primary};
+  --bs-btn-bg: #{$ntg-central-brand-branded-elements-surface-colours-action-secondary};
+  --bs-btn-border-color: #{$ntg-central-brand-branded-elements-surface-colours-action-primary};
   --bs-btn-hover-color: var(--bs-white);
   --bs-btn-hover-bg: #{$ntg-central-brand-colour-primary-blue-400-mid};
-  --bs-btn-hover-border-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-hover-border-color: #{$ntg-central-brand-branded-elements-surface-colours-action-primary};
   --bs-btn-focus-shadow-rgb: var(--bs-btn-focus-box-shadow);
   --bs-btn-active-color: var(--bs-white);
   --bs-btn-active-bg: #{$ntg-central-brand-colour-primary-blue-200};
@@ -131,7 +131,7 @@
 // Tertiary variant
 .btn-tertiary {
   --bs-btn-border-radius: #{$ntg-central-brand-branded-elements-corner-radius-lg};
-  --bs-btn-color: #{$nt-gov-au-brand-basic-branded-elements-surface-colours-action-primary};
+  --bs-btn-color: #{$ntg-central-brand-branded-elements-surface-colours-action-primary};
   --bs-btn-bg: transparent;
   --bs-btn-border-color: transparent;
   --bs-btn-hover-color: #{$ntg-central-brand-colour-secondary-green-600-dark};
